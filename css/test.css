@@ -1,0 +1,203 @@
+html, button {
+    font-size: 16px;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+input {
+    color: rgb(40, 92, 24);
+}
+input:focus {
+    color: rgb(40, 92, 24);
+}
+input[type=text],
+input[type=number] {
+    background: none;
+    border: 0;
+    border-bottom: solid 3px rgb(40, 92, 24);
+}
+input::placeholder {
+    color:  rgb(40, 92, 24);
+    opacity: 0.5;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background:red;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.title-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:80px;
+}
+
+.title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.question-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:100px;
+}
+
+.question {
+    display:table-cell;
+    vertical-align:middle;
+    padding-left: 20px;
+}
+
+.answer-wrap {
+    position: relative;
+    width:100vw;
+    cursor: pointer;
+}
+
+.answer {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.answer-text {
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.controller-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:70px;
+}
+
+.prev-btn {
+    width:50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.prev-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height:100%;
+    background:yellow;
+    opacity: 0.1;
+    z-index: -1;
+}
+.next-btn {
+    width:50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.next-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height:100%;
+    background:blue;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.intro-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:100vh;
+}
+.intro-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background:orange;
+    opacity: 0.2;
+    z-index: -1;
+}
+.intro {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.intro-story {
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: pre;
+}
+
+.result-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:100vw;
+    height:100vh;
+}
+
+.result-wrap img {
+    height: 50vh;
+    object-fit: contain;
+}
+.result-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background:blue;
+    opacity: 0.1;
+    z-index: -1;
+}
+.result {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    font-weight: bold;
+}
