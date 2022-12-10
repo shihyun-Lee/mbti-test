@@ -57,12 +57,12 @@
                 </div>
             </div>
             <!-- 결과 -->
-            <div id="result" class="result-wrap">
+            <div id="result" class="result-wrap" style="background:#DDE1FE;">
                 <img class="result-img" :src="'./static/' + resultImage" alt="">
                 <div style="display: flex; flex-direction: column; padding: 0 10%;">
-                    <div class="result">{{resultLang}}</div>
-                    <div class="result">{{resultMbti}}</div>
-                    <div class="result">{{resultContent}}</div>
+                    <div class="result" style="font-size: 2rem; margin-top: 2rem; font-weight: 700;">{{resultLang}}</div>
+                    <div class="result" style="font-size: .9rem; margin-top: 1.6rem;">{{resultMbti}}</div>
+                    <div class="result" style="margin-top: 1rem;">{{resultContent}}</div>
                 </div>
             </div>
         </div>

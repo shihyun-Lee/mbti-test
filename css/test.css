@@ -31,7 +31,7 @@ button:focus {
 }
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 #main::after {
     content: "";
@@ -40,8 +40,8 @@ body {
     top: 0;
     width: 100%;
     height:100%;
-    background:red;
-    opacity: 0.1;
+    background:#DDE1FE;
+    opacity: 1;
     z-index: -1;
 }
 
@@ -117,8 +117,8 @@ body {
     top: 0;
     width: 50%;
     height:100%;
-    background:yellow;
-    opacity: 0.1;
+    background:#8E9AAE;
+    opacity: 1;
     z-index: -1;
 }
 .next-btn {
@@ -138,8 +138,8 @@ body {
     top: 0;
     width: 50%;
     height:100%;
-    background:blue;
-    opacity: 0.1;
+    background:#EFD3D7;
+    opacity: 1;
     z-index: -1;
 }
 
@@ -156,8 +156,8 @@ body {
     top: 0;
     width: 100%;
     height:100%;
-    background:orange;
-    opacity: 0.2;
+    background: #DDE1FE;
+    opacity: 1;
     z-index: -1;
 }
 .intro {
@@ -173,6 +173,7 @@ body {
 
 .result-wrap {
     display: flex;
+    height: fit-content;
     flex-direction: column;
     position: relative;
     width:100vw;
@@ -190,8 +191,7 @@ body {
     top: 0;
     width: 100%;
     height:100%;
-    background:blue;
-    opacity: 0.1;
+    opacity: 1;
     z-index: -1;
 }
 .result {
