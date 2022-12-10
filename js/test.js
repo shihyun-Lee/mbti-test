@@ -1,7 +1,7 @@
 const test = new Vue({
     el: '#test',
     data: {
-        intro: 'Hello world!',
+        intro: 'click here',
         title: '당신과 어울리는 프로그래밍 언어는?',
         currentIndex: 0,
         qna: [],
@@ -102,14 +102,14 @@ const test = new Vue({
                 }
             }else{
                 if(this.qna[3].r=='예'){
-                    this.resultImage = 'pythonn.png';
+                    this.resultImage = 'python.png';
                     this.resultLang = 'python';
                     this.resultMbti = '#에너제틱 #아이디어 #계획 #적응 #데이터';
                     this.resultContent ='가장 기초적인 언어이고 최근 들어 많은 사람들이 사용해요사람에 가까운 언어라 배우기 쉬워요 이것은 웹 사이트, 서비스 개발, 데이터 분석 등 다양하게 사용돼요'
 
                 }
                 else{
-                    this.resultImage = 'htmlll.png';
+                    this.resultImage = 'html.jpg';
                     this.resultLang = 'html';
                     this.resultMbti = '#에너제틱 #아이디어 #계획 #적응 #데이터';
                     this.resultContent ='당신은 말로 사람을 설득하는 능력이 좋고,  일은 잘 벌리지만 지속하는 능력이 약해요.  html은 웹문서를 만들기 위해 필요한 언어이고,  하이퍼텍스트를 작성하기 위해 만들어졌어요.'
